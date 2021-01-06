@@ -68,7 +68,7 @@ deloitte_colours <- c(
 )
 
 
-extrafont::font_import(pattern = "verdana.ttf", prompt = FALSE)
+# extrafont::font_import(pattern = "verdana.ttf", prompt = FALSE)
 
 DAEChart <- ggplot2::theme_minimal() +
   ggplot2::theme(panel.grid.major.x = ggplot2::element_blank(),
