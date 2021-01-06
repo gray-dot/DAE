@@ -1,0 +1,4 @@
+export(deloitte_cols)
+export(deloitte_pal)
+export(scale_fill_deloitte)
+export(scale_colour_deloitte)
