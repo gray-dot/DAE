@@ -13,7 +13,10 @@ scale_colour_deloitte(
 )
 }
 \arguments{
-\item{gradient}{}
+\item{palette}{Default to 2019 colours}
+\item{discrete}{Works with discrete variables}
+\item{reverese}{Reverses the order of colours}
+\item{gradient}{Create a gradient}
 }
 \description{
 Colour scale constructor

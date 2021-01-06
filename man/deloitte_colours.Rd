@@ -11,7 +11,7 @@ An object of class \code{character} of length 47.
 deloitte_colours
 }
 \description{
-Deloitte colour palette
+Function to select from a list of deloitte colours
 }
 \examples{
 
