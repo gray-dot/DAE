@@ -77,7 +77,6 @@ Function to select from a list of Deloitte colours. The list of Deloitte colours
 }
 \examples{
 ggplot(mpg, aes(x = hwy, y = cty)) +
- geom_line(colour = deloitte_cols("green""))
-
+ geom_line(colour = deloitte_cols("green"))
 }
 \keyword{datasets}
