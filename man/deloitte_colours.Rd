@@ -11,9 +11,73 @@ An object of class \code{character} of length 47.
 deloitte_colours
 }
 \description{
-Function to select from a list of deloitte colours
+Function to select from a list of Deloitte colours. The list of Deloitte colours to choose from are below. More details about Deloitte colours can be found in the \href{https://brandspace.deloitte.com/content/index/guid/standards_elements_color?parent=1598#7-donts}{style guide}.
+
+\strong{Primary}
+\itemize{
+  \item green
+  \item green3
+  \item green4
+  \item green6
+  \item teal
+  \item blue
+}
+
+\strong{Secondary}
+\itemize{
+  \item green1
+  \item green2
+  \item green5
+  \item green7
+  \item blue1
+  \item blue2
+  \item blue3
+  \item blue4
+  \item blue5
+  \item blue6
+  \item blue7
+  \item teal1
+  \item teal2
+  \item teal3
+  \item teal4
+  \item teal5
+  \item teal6
+  \item teal7
+  \item gray2
+  \item gray4
+  \item gray6
+  \item gray9
+  \item gray10
+  \item gray11
+}
+
+\strong{Limited use}
+\itemize{
+  \item lightgreen
+  \item lightteal
+  \item lightblue
+  \item red
+  \item orange
+  \item yellow
+  \item white
+  \item black
+}
+
+\strong{2019 colours}
+\itemize{
+  \item green19
+  \item darkgreen19
+  \item blue19
+  \item darkblue19
+  \item teal19
+  \item gray19
+  \item lightgray19
+  \item bluegray19
+}
 }
 \examples{
+ggplot(mpg, aes(x = hwy, y = cty)) +
+ geom_line(colour = deloitte_cols("green""))
 
 }
 \keyword{datasets}

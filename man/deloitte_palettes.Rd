@@ -3,20 +3,21 @@
 \docType{data}
 \name{deloitte_palettes}
 \alias{deloitte_palettes}
-\title{deloitte_pal}
+\title{deloitte_palettes}
 \format{
 An object of class \code{list} of length 5.
 }
 \usage{
 deloitte_palettes
 }
-\arguments{
-\item{gradient}{}
-}
 \description{
-Deloitte palette selector
+Preset colour themes to choose from. There are currently five:
+\itemize{
+  \item \strong{2019}: All 2019 colours except lightgray19 (green19, darkgreen19, blue19, ..., bluegray19)
+  \item \strong{2020}: All 2020 colours from Primary to Secondary except gray2 (green, green3, green4, ..., gray11)
+  \item \strong{greens}: All shades of green in ascending order (green, green1, green2, ..., green7)
+  \item \strong{blues}: All shades of blue in ascending order (blue, blue1, blue2, ..., blue7)
+  \item \strong{grays}: All shades of gray in ascending order (gray2, gray4, gray6, ..., gray11)
 }
-\examples{
-
 }
 \keyword{datasets}

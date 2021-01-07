@@ -29,9 +29,6 @@ deloitte_palettes <- list(
                         "gray10", "gray11")
 )
 
-if (exists("custom_palettes"))
-{deloitte_palettes <- append(deloitte_palettes, custom_palettes)}
-
 deloitte_pal <- function(palette = "2019", reverse = FALSE, gradient = FALSE, ...) {
   pal <- deloitte_palettes[[palette]]
 

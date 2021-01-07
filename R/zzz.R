@@ -1,6 +1,7 @@
 .onAttach <- function(libname, pkgname) {
-  # to show a startup message
-  # packageStartupMessage("This is my package, enjoy it!")
+
+  #packageStartupMessage("Version 0.3.0")
+
 }
 
 .onLoad <- function(libname, pkgname){

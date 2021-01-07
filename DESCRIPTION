@@ -1,7 +1,7 @@
 Package: DAE
 Type: Package
 Title: Deloitte Access Economics formatting functions and tools
-Version: 0.2.0
+Version: 0.3.0
 Author: Grayson Huynh
 Maintainer: Grayson Huynh <ghuynh@deloitte.com.au>
 Description: This package contains formatting functions and tools for the Deloitte Access Economics team

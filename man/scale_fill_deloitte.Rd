@@ -13,11 +13,24 @@ scale_fill_deloitte(
 )
 }
 \arguments{
-\item{gradient}{}
+\item{palette}{ List of colours to use. \emph{Default palette is 2019}.}
+\item{discrete}{To specify whether the data is discrete (TRUE) or continuous (FALSE). \emph{Default is TRUE}.}
+\item{reverese}{Reverse the order of the colours in the chosen colour palette if TRUE. \emph{Default is no reverse ordering (FALSE)}.
+}
+\item{gradient}{Apply a diverging colour gradient based on the colours chose in palette if TRUE. Recommended to apply gradient if there are more variables than colours in the palette. \emph{Default is no gradient (FALSE)}.}
 }
 \description{
-Fill scale constructor
+The \emph{scale_fill_deloitte} function allows the user to choose a set of colours to fill in (a bar, column or point) of the chart.
 }
 \examples{
+ggplot(mpg, aes(class, fill = class)) +
+  geom_bar() +
+  scale_fill_deloitte() +
+  DAEChart
 
+\strong{To create custom palettes, do the following}:
+ggplot(mpg, aes(class, fill = class)) +
+  geom_bar() +
+  scale_fill_manual(values = list(deloitte_cols("green"), deloitte_cols("blue"))) +
+  DAEChart
 }

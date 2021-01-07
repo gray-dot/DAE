@@ -13,14 +13,25 @@ scale_colour_deloitte(
 )
 }
 \arguments{
-\item{palette}{Default to 2019 colours}
-\item{discrete}{Works with discrete variables}
-\item{reverese}{Reverses the order of colours}
-\item{gradient}{Create a gradient}
+\item{palette}{ List of colours to use. \emph{Default palette is 2019}.}
+\item{discrete}{To specify whether the data is discrete (TRUE) or continuous (FALSE). \emph{Default is TRUE}.}
+\item{reverese}{Reverse the order of the colours in the chosen colour palette if TRUE. \emph{Default is no reverse ordering (FALSE)}.
+}
+\item{gradient}{Apply a diverging colour gradient based on the colours chose in palette if TRUE. Recommended to apply gradient if there are more variables than colours in the palette. \emph{Default is no gradient (FALSE)}.}
 }
 \description{
-Colour scale constructor
+The \emph{scale_colour_deloitte} function allows the user to choose the colours of the lines in the chart.
 }
 \examples{
+ggplot(mpg, aes(displ, hwy, colour = class)) +
+  geom_point() +
+  scale_colour_deloitte() +
+  DAEChart
 
+
+\strong{To create custom palettes, do the following}:
+ggplot(mpg, aes(displ, hwy, colour = class)) +
+  geom_point() +
+  scale_colour_manual(values = list(deloitte_cols("green"), deloitte_cols("blue"))) +
+  DAEChart
 }
